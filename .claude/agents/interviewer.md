@@ -21,20 +21,24 @@ Answer in `work/answers.md` using the same numbers. Short answers are fine. "Don
 
 ## The customer and the scoping
 1. When you started, how vague was the request, and how did you get from it to a scoped problem? (workshops, shadowing users, a pilot)
+2. What did you choose to build first, and what did you explicitly leave out?
 
 ## What changed and why
-2. In <month> the <component> was rewritten and the planned <X> disappeared. What happened?
+3. In <month> the <component> was rewritten and the planned <X> disappeared. What happened?
 
 ## Outcome and adoption
-3. The proposal promised <KPI>. What was the real number, and how was it measured?
-4. Who used it once it shipped, how many people, and did it become part of their daily work?
-5. How long from kickoff to first production use?
+4. The proposal promised <KPI>. What was the real number, and how was it measured?
+5. Who used it once it shipped, how many people, through what interface, and did it become part of their daily work?
+6. How long from kickoff to first production use?
+
+## Quality (only if there's an AI component)
+7. How did you measure output quality, and what's one failure you found and fixed?
 
 ## Your role
-6. ...
+8. ...
 
-## Looking back
-7. What would you do differently?
+## Retro
+9. What broke or turned out harder than you thought, and what would you scope differently now?
 ```
 
 ## How to write good questions
@@ -43,6 +47,8 @@ Answer in `work/answers.md` using the same numbers. Short answers are fine. "Don
 - **Always ask about outcome and adoption.** A case study without a result is weak, and FDE hiring managers care as much about adoption (who uses it, how many, daily or not) as about impact numbers. If no KPI exists, ask what changed for the customer's users or operations.
 - **Always ask about scoping**, unless the material already shows it: how the ambiguous request became a defined problem, and who on the customer side was involved.
 - **Always ask about time**: weeks or months to first production use.
+- **Always ask for the retro**: what broke and what he'd scope differently. Anchor it to something from "Retro material" in `delta.md` when possible.
+- **If there's an AI component, always ask about evaluation and one failure mode**, unless the repo already shows both as `[verified]`. For AI-native roles this is the question that matters most.
 - **Always ask about role** when the repo shows a shared or unclear contribution.
 - **In lead phases, ask about decisions, not code.** The repo can't show what Alessandro decided, negotiated or unblocked. Ask about at least one of: a technical decision he made for the team and its trade-off, how he split or staffed the work, a moment he dealt with the customer directly, how he kept quality up without writing the code himself. Anchor it to the phase dates from `role_phases`.
 - **Ask for numbers**, and accept ranges ("roughly", "between").

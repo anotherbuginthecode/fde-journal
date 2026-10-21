@@ -33,6 +33,9 @@ The gap between plan and reality is where the FDE story lives. Your job is to fi
    - Status: [verified] if both sides are verified, otherwise [inferred]
    - Needs from Alessandro: <the missing why, or "nothing">
 
+## Retro material
+- Things that broke, were underestimated or got cut late (post-release fix clusters, abandoned components, scope cut near the deadline). These feed the required Retro section.
+
 ## Things that went as planned
 - Short list. Useful to show judgment, not only firefighting.
 
