@@ -23,12 +23,13 @@ You are the orchestrator. You do not analyze material yourself: you route work t
 projects/<slug>/
   project.local.yaml   # real names, author emails, dates (never committed)
   redact.txt           # one sensitive term per line (never committed)
-  inputs/
-    repo/              # the client repository (full git history if possible)
+  inputs/              # optional manual copies, plus clones of remote repos
+    repo/<name>/       # remote repos from `sources.repos` are cloned here
     proposal/          # proposal slides, context decks
     annex/             # technical annex / allegato tecnico
     extras/            # optional: PR or review exports, tracker exports
   work/                # intermediate notes, real names allowed (never committed)
+    sources.md         # resolved list of every source used (written by you)
     docs-notes.md
     repo-notes.md
     delta.md
@@ -47,11 +48,17 @@ See `projects/_example/` for templates of `project.local.yaml` and `redact.txt`.
 The pipeline runs in two phases, with Alessandro in the middle.
 
 **Phase 1: analysis** (`/fde-analyze <slug>`)
-1. Check that `project.local.yaml`, `redact.txt` and at least one of `inputs/proposal`, `inputs/annex`, `inputs/repo` exist. If something is missing, stop and say what.
-2. Run `docs-analyst` and `repo-analyst` in parallel. They write `work/docs-notes.md` and `work/repo-notes.md`.
-3. Run `delta-analyst` on both notes. It writes `work/delta.md`.
-4. Run `interviewer`. It writes `work/questions.md` (max 10 questions).
-5. Stop. Tell Alessandro the questions are ready and that he should answer in `work/answers.md`.
+1. Check that `project.local.yaml` and `redact.txt` exist. If not, stop and say what.
+2. **Resolve sources** into `work/sources.md`, one line per source with its kind (`repo`, `proposal`, `annex`, `extras`), name and absolute path:
+   - `sources.repos` with `path`: expand `~`, check the folder exists and is a git repo. Use it in place. Never run commands that change it (no checkout, pull, commit, stash, clean).
+   - `sources.repos` with `url`: clone into `inputs/repo/<name>/` with full history (`git clone`, and `--branch` if given). If the folder already exists, reuse it. If the clone fails (auth, network), stop and report: never try alternative credentials.
+   - `sources.proposal`, `annex`, `extras`: expand `~`, check each file or folder exists. Do not copy them.
+   - Anything already in `inputs/<kind>/` is added too.
+   - If a listed source doesn't exist, report it. Stop only if no repo and no document is left.
+3. Run `docs-analyst` and `repo-analyst` in parallel, both reading their sources from `work/sources.md`. They write `work/docs-notes.md` and `work/repo-notes.md`.
+4. Run `delta-analyst` on both notes. It writes `work/delta.md`.
+5. Run `interviewer`. It writes `work/questions.md` (max 10 questions).
+6. Stop. Tell Alessandro the questions are ready and that he should answer in `work/answers.md`.
 
 **Phase 2: writing** (`/fde-write <slug>`)
 1. Check that `work/answers.md` exists and is not empty. If not, stop.

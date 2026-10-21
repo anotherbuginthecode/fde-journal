@@ -4,6 +4,25 @@ client_real_name: "ACME S.p.A."
 client_public_description: "a large Italian retailer"   # how it appears in out/
 period: "2023-03 / 2024-01"
 
+# Where the material lives. Every entry is optional, but at least one source
+# is needed. Paths can be absolute or start with ~. Anything you prefer to
+# copy by hand into inputs/<kind>/ is picked up too, in addition to these.
+sources:
+  repos:
+    # A local clone: read in place, never modified.
+    - name: backend
+      path: "~/work/clients/acme/acme-backend"
+    # A remote: cloned with full history into inputs/repo/<name>/.
+    - name: frontend
+      url: "git@gitlab.company.example:acme/frontend.git"
+      branch: main            # optional, default branch otherwise
+  proposal:                   # files or folders
+    - "~/Documents/clients/acme/proposta-commerciale.pdf"
+  annex:
+    - "~/Documents/clients/acme/allegato-tecnico.docx"
+  extras:                     # optional: PR/review exports, tracker exports
+    - "~/Documents/clients/acme/reviewed-prs.json"
+
 # How your role changed over the project. The repo-analyst reads your commits
 # against these phases: a drop in commits during a "lead" phase is expected,
 # not a sign of a smaller contribution.

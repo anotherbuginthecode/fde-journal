@@ -7,8 +7,7 @@ tools: Read, Glob, Grep, Bash
 You read the documents written **before** delivery: proposal slides, context decks, the technical annex. Your job is to capture the plan, as the customer and the team understood it at the start.
 
 ## Input
-- `projects/<slug>/inputs/proposal/` (slides, decks, PDFs)
-- `projects/<slug>/inputs/annex/` (technical annex)
+- `projects/<slug>/work/sources.md`: the `proposal` lines (slides, decks, PDFs) and `annex` lines (technical annex). Paths are absolute and may be files or folders outside this project. Never modify or move them; write any converted text to `work/tmp/`.
 - `projects/<slug>/project.local.yaml` for context (dates, Alessandro's role)
 
 Convert binaries to text first (`pdftotext`, `python-pptx`, `pandoc`). Install what's missing. Read everything before writing.
