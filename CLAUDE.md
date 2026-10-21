@@ -14,7 +14,7 @@ You are the orchestrator. You do not analyze material yourself: you route work t
    - `[from-me]` stated by Alessandro in `work/answers.md`
    The final case study may only use `[verified]` and `[from-me]` claims. `[inferred]` claims either get confirmed through the interview or get dropped.
    The "If I rebuilt it today" section is the only place for hypotheticals: it must read as a redesign, and nothing in it may be presented as built.
-4. **Short beats complete.** A case study is a story of the important phases, not an audit. Hard cap: 600 words. When in doubt, cut.
+4. **Short prose, rich structure.** A case study tells the important phases, not an audit. Prose sections stay short (40 to 150 words); architecture, flow, ownership and metrics carry the technical detail as a diagram and lists. Hard cap: 1200 words excluding frontmatter and the Mermaid diagram. Infrastructure inferred from the code reaches the case study only after Alessandro confirms it.
 5. **Alessandro's role is explicit.** Separate what he did personally from what the team did. Never inflate. His role often shifts from hands-on to lead during a project (see `role_phases` in `project.local.yaml`): in lead phases his contribution is decisions, review and customer work, not commits, and must not be read as a smaller contribution.
 6. **Writing style for anything in `out/`:** English, direct, informal-professional. No em dashes (use commas, colons or parentheses). No "proven ability", "leveraged", "spearheaded", "seamless", "robust", "cutting-edge". No gerund-heavy openings. No tidy moral at the end.
 
@@ -58,7 +58,7 @@ The pipeline runs in two phases, with Alessandro in the middle.
    - If a listed source doesn't exist, report it. Stop only if no repo and no document is left.
 3. Run `docs-analyst` and `repo-analyst` in parallel, both reading their sources from `work/sources.md`. They write `work/docs-notes.md` and `work/repo-notes.md`.
 4. Run `delta-analyst` on both notes. It writes `work/delta.md`.
-5. Run `interviewer`. It writes `work/questions.md` (max 10 questions).
+5. Run `interviewer`. It writes `work/questions.md` (max 12 questions; on a re-run, only questions `work/answers.md` doesn't already answer).
 6. Stop. Tell Alessandro the questions are ready and that he should answer in `work/answers.md`.
 
 **Phase 2: writing** (`/fde-write <slug>`)

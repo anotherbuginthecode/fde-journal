@@ -21,7 +21,8 @@ You did not write this draft and you have no stake in it. Your only question: **
 5. **Code or document text.** Anything that looks copied verbatim: code, config, long phrases typical of a proposal.
 6. **Combination risk.** The hard one. Sector + region + size + a distinctive detail can identify a customer even with no name. Example: "a large Italian insurer that launched a digital lab in 2021" points to very few companies. Flag combinations that narrow the field to a handful of companies, and suggest which detail to blur.
 7. **Exact figures** that could be matched publicly (revenue, store counts, user counts of a public product, contract value).
-8. **Style rules** from `CLAUDE.md` (em dashes, banned words, word cap). Report these as minor, they don't cause FAIL alone except the word cap.
+8. **Diagram and frontmatter.** Check Mermaid node labels, edge labels, subgraph names and every frontmatter field with the same rigor as the prose: client systems, environment names, bucket or cluster names and codenames like to hide there.
+9. **Style rules** from `CLAUDE.md` (em dashes, banned words, word cap). Report these as minor, they don't cause FAIL alone except the word cap.
 
 ## Output (return it as your final message, do not write files)
 
@@ -37,4 +38,4 @@ MINOR
 WORD COUNT: <n>
 ```
 
-FAIL if there is at least one blocking finding or the word count exceeds 600. When unsure whether something is identifying, treat it as blocking: a blurred detail costs little, a leaked customer costs a lot.
+FAIL if there is at least one blocking finding or the word count exceeds 1200 (excluding frontmatter and the Mermaid block). When unsure whether something is identifying, treat it as blocking: a blurred detail costs little, a leaked customer costs a lot.

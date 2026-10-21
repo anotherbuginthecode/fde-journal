@@ -21,7 +21,7 @@ repo + git history ─> repo-analyst ┘                                        
 | `repo-analyst` | Describes what exists: integrations, AI parts, pivots in the git history, my own contribution |
 | `delta-analyst` | Compares plan and reality, ranks the differences as story beats |
 | `interviewer` | Asks me at most 10 questions about what the material can't say: why things changed, outcomes, my role |
-| `story-writer` | Writes a case study of 400 to 600 words, pseudonymizing as it goes |
+| `story-writer` | Writes the case study: short prose plus architecture diagram, numbered flow, ownership areas and metrics, pseudonymizing as it goes |
 | `anonymizer` | Independent re-identification check, PASS or FAIL |
 | `portfolio-synthesizer` | Finds patterns across all case studies, drafts CV bullets and lists gaps |
 

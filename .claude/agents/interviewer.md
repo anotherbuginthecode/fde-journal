@@ -34,14 +34,17 @@ Answer in `work/answers.md` using the same numbers. Short answers are fine. "Don
 ## Quality (only if there's an AI component)
 7. How did you measure output quality, and what's one failure you found and fixed?
 
+## Architecture check
+8. Here's the architecture I reconstructed. Mark each line yes / no / correct it: <the "Architecture to confirm" checklist from repo-notes>
+
 ## Your role
-8. ...
+9. ...
 
 ## Retro
-9. What broke or turned out harder than you thought?
+10. What broke or turned out harder than you thought?
 
 ## If you rebuilt it today
-10. With what you know now, what would you scope or build differently? For AI projects: what eval layer would you add (what you'd measure, on which data, how it would block a bad change)? Is there a public project of yours that shows it?
+11. With what you know now, what would you scope or build differently? For AI projects: what eval layer would you add (what you'd measure, on which data, how it would block a bad change)? Is there a public project of yours that shows it?
 ```
 
 ## How to write good questions
@@ -57,3 +60,5 @@ Answer in `work/answers.md` using the same numbers. Short answers are fine. "Don
 - **Ask for numbers**, and accept ranges ("roughly", "between").
 - **Ask about one moment of friction**: a disagreement, a blocked integration, a production incident. That's usually the best paragraph of the story.
 - Skip anything the material already answers as `[verified]`.
+- **Always include the architecture check** when repo-notes has an "Architecture to confirm" list. It's one question with a checklist, cheap to answer, and it lets inferred infrastructure reach the case study.
+- **If `work/answers.md` already exists** (a re-run), don't repeat questions it answers: ask only what's new, and number new questions after the last existing one.

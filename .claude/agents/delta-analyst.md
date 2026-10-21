@@ -33,6 +33,12 @@ The gap between plan and reality is where the FDE story lives. Your job is to fi
    - Status: [verified] if both sides are verified, otherwise [inferred]
    - Needs from Alessandro: <the missing why, or "nothing">
 
+## Headline decision
+- The one design decision with the clearest trade-off (from "Design decisions visible in the code" or the annex), and the alternative. Feeds the decision section.
+
+## Framing
+- One "X, not Y" sentence that reframes the customer problem (e.g. "a statement is a set of tables, not a document"). Mark it as a suggestion: the story-writer may change it.
+
 ## Retro material
 - Things that broke, were underestimated or got cut late (post-release fix clusters, abandoned components, scope cut near the deadline). These feed the required Retro section.
 
