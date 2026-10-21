@@ -18,9 +18,9 @@ repo + git history ─> repo-analyst ┘                                        
 | Agent | Job |
 |---|---|
 | `docs-analyst` | Extracts the plan: customer problem, goals, promised KPIs, planned architecture |
-| `repo-analyst` | Describes what exists: integrations, AI parts, pivots in the git history, my own contribution |
+| `repo-analyst` | Describes what exists: infrastructure, architecture, core flow, AI parts, pivots in the git history, my own contribution |
 | `delta-analyst` | Compares plan and reality, ranks the differences as story beats |
-| `interviewer` | Asks me at most 10 questions about what the material can't say: why things changed, outcomes, my role |
+| `interviewer` | Asks me at most 12 questions about what the material can't say: why things changed, outcomes, my role, and confirms the reconstructed architecture |
 | `story-writer` | Writes the case study: short prose plus architecture diagram, numbered flow, ownership areas and metrics, pseudonymizing as it goes |
 | `anonymizer` | Independent re-identification check, PASS or FAIL |
 | `portfolio-synthesizer` | Finds patterns across all case studies, drafts CV bullets and lists gaps |
