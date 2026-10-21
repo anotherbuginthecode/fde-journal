@@ -32,7 +32,7 @@ Two lines maximum, usable as a CV summary: the role plus one concrete delivery o
 
 ## Gaps
 - Skills that FDE roles usually ask for and that none of the case studies show yet.
-- AI-native check: does at least one case study show a real retrieval or agent system, an explicit eval method, and a failure mode found and fixed? Say which case study covers each, or which is missing.
+- AI-native check: does at least one case study show a real retrieval or agent system, an explicit eval method, and a failure mode found and fixed? Say which case study covers each, or which is missing. An eval described only in "If I rebuilt it today" counts as design thinking, not evidence: say so, and note whether a public companion project backs it.
 - Case studies missing a measurable result, a non-technical user, or a specific retro.
 ```
 

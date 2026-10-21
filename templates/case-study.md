@@ -15,7 +15,7 @@
 <3 to 4 sentences. The solution at component level, the key integrations, the decisions that were mine, and how non-technical users operated it (interface, where it ran).>
 
 ## How we knew it worked
-<Only for projects with an AI component. 2 to 3 sentences. How output quality was measured (eval set, metric, human review) and one failure mode found and fixed.>
+<Only for projects with an AI component. 2 to 3 sentences. How output quality was measured at the time (eval set, metric, human review, or honestly: manual spot checks) and one failure mode found and fixed. Never describe an eval that didn't exist: that goes in "If I rebuilt it today".>
 
 ## What changed along the way
 <2 to 3 sentences. One moment where the plan met reality and something had to change. Say what, and why.>
@@ -24,4 +24,7 @@
 <2 to 3 sentences. Adoption (who uses it, how many, how often, for how long), impact (the number), and time to production. If there's no number, the concrete change for the customer's team.>
 
 ## Retro
-<2 sentences, required. What broke or what I underestimated, and what I'd scope differently now. Honest, specific, not a moral.>
+<2 sentences, required. What broke and what I underestimated. Honest, specific, not a moral.>
+
+## If I rebuilt it today
+<Optional, 2 to 4 sentences, written clearly as a redesign ("Today I would..."). What I'd scope differently and, for AI projects, the eval layer I'd add: what I'd measure, on what data, and how it would gate changes. If a public companion project shows this approach, link it in one line.>
