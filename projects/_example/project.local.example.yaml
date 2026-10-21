@@ -3,9 +3,28 @@ slug: example-project
 client_real_name: "ACME S.p.A."
 client_public_description: "a large Italian retailer"   # how it appears in out/
 period: "2023-03 / 2024-01"
-my_role: "Tech lead, team of 6"
+
+# How your role changed over the project. The repo-analyst reads your commits
+# against these phases: a drop in commits during a "lead" phase is expected,
+# not a sign of a smaller contribution.
+role_phases:
+  - from: "2023-03"
+    to: "2023-07"
+    mode: hands-on        # hands-on | mixed | lead
+    role: "Developer and architect"
+    team_size: 3
+  - from: "2023-08"
+    to: "2024-01"
+    mode: lead
+    role: "Tech lead, customer-facing"
+    team_size: 6
+    responsibilities: "architecture decisions, code review, customer meetings, release planning"
+
+# Every identity you committed or merged under (work email, personal email,
+# display names). Used to find your commits, merges and authored docs.
 my_git_identities:
   - "alessandro@company.example"
   - "Alessandro M."
+
 notes: |
   Anything worth knowing that is not in the material.

@@ -14,7 +14,7 @@ You are the orchestrator. You do not analyze material yourself: you route work t
    - `[from-me]` stated by Alessandro in `work/answers.md`
    The final case study may only use `[verified]` and `[from-me]` claims. `[inferred]` claims either get confirmed through the interview or get dropped.
 4. **Short beats complete.** A case study is a story of the important phases, not an audit. Hard cap: 600 words. When in doubt, cut.
-5. **Alessandro's role is explicit.** Separate what he did personally from what the team did. Never inflate.
+5. **Alessandro's role is explicit.** Separate what he did personally from what the team did. Never inflate. His role often shifts from hands-on to lead during a project (see `role_phases` in `project.local.yaml`): in lead phases his contribution is decisions, review and customer work, not commits, and must not be read as a smaller contribution.
 6. **Writing style for anything in `out/`:** English, direct, informal-professional. No em dashes (use commas, colons or parentheses). No "proven ability", "leveraged", "spearheaded", "seamless", "robust", "cutting-edge". No gerund-heavy openings. No tidy moral at the end.
 
 ## Project layout
@@ -27,6 +27,7 @@ projects/<slug>/
     repo/              # the client repository (full git history if possible)
     proposal/          # proposal slides, context decks
     annex/             # technical annex / allegato tecnico
+    extras/            # optional: PR or review exports, tracker exports
   work/                # intermediate notes, real names allowed (never committed)
     docs-notes.md
     repo-notes.md

@@ -34,6 +34,7 @@ You write one case study per project. It must read like a story a strong FDE tel
 ## Style
 - English. Second sentence should already be about the problem.
 - First person, past tense. "I", not "we", for Alessandro's own work. "The team" for shared work.
+- When the role shifted to lead, say so in one sentence and keep "I" for what leading meant: decisions, trade-offs, structuring the work, dealing with the customer, unblocking people. "I moved the team to X because Y" is a stronger line than any commit count. Don't claim implementation he didn't do, and don't hide decisions he did make behind "the team".
 - Hard cap 600 words, target 400 to 500. Each section 2 to 5 sentences.
 - No em dashes. No "proven", "leveraged", "spearheaded", "seamless", "robust", "cutting-edge", "game-changer". No opening with a gerund. No closing moral or summary sentence.
 - Plain words. Write it the way Alessandro would explain it to a smart colleague over coffee.
