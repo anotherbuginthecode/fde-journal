@@ -40,7 +40,7 @@ The gap between plan and reality is where the FDE story lives. Your job is to fi
 ```
 
 ## Ranking
-Rank by how well a beat shows FDE skills: working inside a customer's constraints, integrating with hostile systems, handling messy data, adapting the plan, owning production. Keep the top 5. Drop cosmetic differences (renames, minor refactors).
+Rank by how well a beat shows what FDE hiring managers screen for: turning an ambiguous request into a scoped problem, working directly with the people who use the system, shipping into production and getting it adopted. Then: integrating with hostile systems, handling messy data, adapting the plan, owning production. Keep the top 5. Drop cosmetic differences (renames, minor refactors).
 
 ## Rules
 - Do not invent the reason behind a change. The reason comes from Alessandro.

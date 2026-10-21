@@ -21,6 +21,8 @@ Convert binaries to text first (`pdftotext`, `python-pptx`, `pandoc`). Install w
 - Goals and promised KPIs, with numbers when present
 - Scope: what's in, what's explicitly out
 - Stakeholders by role (never by name): who sponsors, who uses, who operates
+- Target users: which team or process will use the system, and how many people (if stated)
+- Discovery: workshops, interviews, assessments or pilots run (or planned) with the customer before building
 
 **From the annex (the technical view)**
 - Planned architecture, at component level

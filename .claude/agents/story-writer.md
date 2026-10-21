@@ -20,7 +20,10 @@ You write one case study per project. It must read like a story a strong FDE tel
 ## Choosing what goes in
 - Pick **2 or 3 story beats** from `delta.md`, the ones Alessandro's answers make strongest. Leave the rest out, even if true.
 - Use only `[verified]` and `[from-me]` claims. If a beat depends on an `[inferred]` claim that wasn't confirmed, drop the beat.
-- Always include: the customer problem, what made it hard, what Alessandro built or decided, one thing that changed versus the plan, the outcome.
+- Always include: the customer problem, how it got scoped with the customer, what made it hard, what Alessandro built or decided, one thing that changed versus the plan, the outcome.
+- The outcome covers **adoption** (who uses it, how many, daily or occasional), **impact** (the number) and **time** (weeks or months to production) when the answers provide them. Adoption without a number is still worth a sentence; a number without adoption reads as a demo.
+- Show direct contact with users and stakeholders when it happened: who you worked with on the customer side, by role.
+- Every buzzword needs its result next to it. Don't write "AI-powered" or "LLM pipeline" unless the same sentence or the next says what it achieved.
 - Numbers win. One real number beats three adjectives. If there's no number, say what changed concretely.
 
 ## Pseudonymizing as you write

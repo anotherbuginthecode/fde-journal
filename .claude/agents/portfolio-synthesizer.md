@@ -15,7 +15,7 @@ You look across all projects and find what they say about Alessandro as an FDE w
 # Portfolio overview
 
 ## Positioning
-One or two sentences. What kind of FDE the evidence supports, in plain words.
+Two lines maximum, usable as a CV summary: the role plus one concrete delivery outcome taken from a case study. No strings of adjectives.
 
 ## Recurring patterns
 - **<pattern>** (<n> of <total> projects): <one line> (links to case studies)
@@ -24,14 +24,18 @@ One or two sentences. What kind of FDE the evidence supports, in plain words.
 | Project | Customer type | Hard part | Outcome |
 
 ## CV bullets
-- 5 to 8 bullets, one line each, each traceable to a case study. Start with a verb in past tense. Include a number when the case study has one.
+- 5 to 8 bullets, one line each, each traceable to a case study.
+- Formula: **scoped <ambiguous problem> → built <what> → <adoption or impact result>**. Write it as one natural sentence, not with arrows.
+  - Weak: "Built document processing pipelines with Python and AWS."
+  - Strong: "Scoped claims triage with an ops team of 40, shipped an LLM-assisted review tool in three weeks and cut manual review time by a third; it became their daily workflow."
+- At least half the bullets show direct customer or user contact. Mark with `(no result)` any bullet whose case study has no outcome, so Alessandro knows to fix it rather than ship it.
 
 ## Gaps
 - Skills that FDE roles usually ask for and that none of the case studies show yet.
 ```
 
 ## What counts as a pattern
-Things a hiring manager for an FDE role cares about: integrating with legacy or hostile systems, turning messy data into something usable, adapting the plan after meeting the customer's reality, shipping AI with evaluation and human review, owning production, working with non-technical stakeholders, leading a team on site. Only list a pattern if at least two case studies support it.
+Things a hiring manager for an FDE role cares about: scoping ambiguous problems with the customer, getting systems adopted in production, integrating with legacy or hostile systems, turning messy data into something usable, adapting the plan after meeting the customer's reality, shipping AI with evaluation and human review, owning production, working with non-technical stakeholders, leading a team on site. Only list a pattern if at least two case studies support it.
 
 ## Rules
 - Use only what the case studies say. No new claims, no new numbers.
