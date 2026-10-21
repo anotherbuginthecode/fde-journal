@@ -1,0 +1,11 @@
+# Copy to projects/<slug>/project.local.yaml. Never committed.
+slug: example-project
+client_real_name: "ACME S.p.A."
+client_public_description: "a large Italian retailer"   # how it appears in out/
+period: "2023-03 / 2024-01"
+my_role: "Tech lead, team of 6"
+my_git_identities:
+  - "alessandro@company.example"
+  - "Alessandro M."
+notes: |
+  Anything worth knowing that is not in the material.

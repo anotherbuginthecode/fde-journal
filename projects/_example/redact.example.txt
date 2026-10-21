@@ -1,0 +1,6 @@
+# Copy to projects/<slug>/redact.txt. Never committed.
+# One term per line, case-insensitive. Client names, codenames, people,
+# internal systems, domains. Lines starting with # are ignored.
+ACME
+acme-internal.example
+Project Falcon

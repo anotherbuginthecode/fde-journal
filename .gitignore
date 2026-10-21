@@ -1,0 +1,15 @@
+# Client material never leaves this machine.
+# Only the anonymized output of each project is tracked.
+projects/*/*
+!projects/*/out/
+!projects/_example/
+!projects/_example/**
+
+# Belt and braces: these must never be committed, wherever they end up
+**/redact.txt
+**/pseudonyms.yaml
+**/project.local.yaml
+**/inputs/
+**/work/
+
+.DS_Store
